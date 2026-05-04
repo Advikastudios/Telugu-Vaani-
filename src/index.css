@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Urbanist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-primary: #5142FC;
+  --color-secondary: #E250E5;
+  --color-accent: #343444;
+  --color-dark: #14141F;
+}
+
+@layer base {
+  body {
+    @apply bg-[#14141F] text-white;
+  }
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #343444;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #5142FC;
+}
+
+/* Glass effect and gradients */
+.glass-card {
+  @apply bg-[#343444]/40 backdrop-blur-xl border border-white/5 shadow-2xl;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #5142FC 0%, #E250E5 100%);
+  @apply hover:shadow-[0_0_20px_rgba(81,66,252,0.4)] transition-all;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #5142FC 0%, #E250E5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

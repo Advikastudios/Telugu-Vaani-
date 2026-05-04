@@ -1,0 +1,6 @@
+{
+  "name": "Telugu Vaani",
+  "description": "A professional Telugu Text-to-Speech application using high-quality browser voices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["text-to-speech"]
+}
